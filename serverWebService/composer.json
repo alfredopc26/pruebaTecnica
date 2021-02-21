@@ -1,0 +1,12 @@
+{
+    "name": "carlosp/server-web-service",
+    "require": {
+        "phroute/phroute": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "alfredopc26",
+            "email": "calfredoperez26@gmail.com"
+        }
+    ]
+}
