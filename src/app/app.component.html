@@ -5,12 +5,12 @@
         <img width="40" alt="Soho Logo" src="assets/image/logo-soho.png" />
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link " [ngClass]="{'active': currentSection === 'home'}" (click)="scrollTo('home')" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link " [ngClass]="{'active': currentSection === 'us'}" (click)="scrollTo('us')" href="#">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link " [ngClass]="{'active': currentSection === 'project'}" (click)="scrollTo('project')" href="#">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link " [ngClass]="{'active': currentSection === 'project'}" (click)="scrollTo('project')" href="#">Casos de éxito</a></li>
-                <li class="nav-item"><a class="nav-link " [ngClass]="{'active': currentSection === 'contact'}" (click)="scrollTo('contact')" href="#">Únete al equipo</a></li>
-                <li class="nav-item"><a class="nav-link " [ngClass]="{'active': currentSection === 'contact'}" (click)="scrollTo('contact')" href="#">Contacto</a></li>
+                <li class="nav-item" [ngClass]="{'active': currentSection === 'home'}" ><a class="nav-link " (click)="activeTo('home')"  href="#home">Inicio</a></li>
+                <li class="nav-item" [ngClass]="{'active': currentSection === 'us'}" ><a class="nav-link " (click)="activeTo('us')"  href="#us" >Nosotros</a></li>
+                <li class="nav-item" [ngClass]="{'active': currentSection === 'project'}" ><a class="nav-link "  (click)="activeTo('project')" href="#project">Servicios</a></li>
+                <li class="nav-item" [ngClass]="{'active': currentSection === 'success'}" ><a class="nav-link " (click)="activeTo('success')"  href="#success">Casos de éxito</a></li>
+                <li class="nav-item" [ngClass]="{'active': currentSection === 'join'}" ><a class="nav-link "  (click)="activeTo('join')" href="#join">Únete al equipo</a></li>
+                <li class="nav-item" [ngClass]="{'active': currentSection === 'contact'}" ><a class="nav-link "  (click)="activeTo('contact')" href="#contact">Contacto</a></li>
             </ul>
         </div>
     </div>

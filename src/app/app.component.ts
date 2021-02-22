@@ -42,8 +42,8 @@ export class AppComponent {
     console.log(this.currentSection);
   }
 
-  scrollTo(section) {
-    document.querySelector('#' + section).scrollIntoView();
+  activeTo(section) {
+    this.currentSection = section;
   }
 
 }
