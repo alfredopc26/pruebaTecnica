@@ -31,4 +31,16 @@ export class SectionProjectComponent implements OnInit {
 
   }
 
+  getBtn(ref){
+
+    if(ref=="blue"){
+      return "bg-white";
+    }else if(ref=="red"){
+      return "bg-white";
+    }else if(ref=="white"){
+      return "bg-red";
+    }
+
+  }
+
 }

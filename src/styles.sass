@@ -1,12 +1,26 @@
+/*********************************************************************************/
+/* Style Main                                                                    */
+/*********************************************************************************/    
 @font-face
   font-family: 'Graphik'
   src: url('./assets/font/Graphik-Extralight.otf')
 
- 
+$base-green: #12CA2A
+$green-hover: #208D2E
+$base-black: #000000
+$base-blue: #263A80
+$base-red: #CA373B
+$base-white: #ffffff
+$base-gray: #2D3238
+$base-gray-blue: #181F2A
+
+
+
 html, body 
     height: 100vh
     margin: 0
     font-family: 'Graphik'
+    
 
 h2
     font-size: 2rem 
@@ -14,23 +28,107 @@ h2
 h3 
     font-size: 1rem 
 
+/*********************************************************************************/
+/* Style Buttons                                                                 */
+/*********************************************************************************/  
+
+.btn  
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important 
+    font-weight: bold
+    text-transform: uppercase 
+    letter-spacing: 0.12rem 
+    border: 0 
+    text-decoration: none
+    border-radius: 5px
+    cursor: pointer
+ 
+.btn.btn-main
+    padding: 1.25rem 2rem 
+
+.btn.btn-secondary
+    padding: 0.5rem 0.5rem 
+    font-size: 80% 
+    line-height: 1.5 
+
+.btn.btn-project
+    padding: 1rem 1.5rem 
+    font-size: 60% 
+    line-height: 1.5 
+
+.btn.bg-green:hover  
+    color: #fff 
+    background-color: $green-hover
+    border-color: $green-hover
+
+.btn.bg-green-outline:hover  
+    color: #000 
+    background-color: $base-green
+    border-color: $base-black
+
+
+/*********************************************************************************/
+/* Style Background                                                              */
+/*********************************************************************************/  
+.bg-green
+    color: #fff 
+    background-color: $base-green
+    border: 1px solid $base-green 
+    
+.bg-green-outline
+    color: #fff 
+    background-color: transparent 
+    border: 1px solid $base-green
+
+.bg-black
+    color: #fff 
+    background-color: $base-black
+    border-color: $base-black
+
+.bg-blue
+    color: #fff 
+    background-color: $base-blue
+    border: 1px solid $base-blue 
+
+.bg-red
+    color: #fff 
+    background-color: $base-red
+    border: 1px solid $base-red 
+
+.bg-white
+    color: #000 
+    background-color: $base-white
+    border: 1px solid $base-white 
+
+.bg-gray
+    color: #fff 
+    background-color: $base-gray
+    border: 1px solid $base-gray 
+
+.bg-gray-blue
+    color: #fff 
+    background-color: $base-gray-blue
+    border: 1px solid $base-gray-blue 
+
+/*********************************************************************************/
+/* Style text                                                                    */
+/*********************************************************************************/  
 .text-center  
-    text-align: center !important 
+    text-align: center 
 
 .text-white  
-    color: #fff !important 
+    color: #fff 
 
 .text-green  
-    color: #28a745 !important 
+    color: $base-green
 
 .text-blue  
-    color: #084ED5 !important 
+    color: #084ED5 
 
 .text-cyan  
-    color: #16D5F3 !important
+    color: #16D5F3 
 
 .text-purple  
-    color: #4954AD !important  
+    color: #4954AD  
 
 .text-red
-    color: #F3576C !important 
+    color: #F3576C 

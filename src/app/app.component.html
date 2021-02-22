@@ -1,14 +1,14 @@
-<div id="parentDiv" scrollSpy [spiedTags]="['section']" (sectionChange)="onSectionChange($event)">
+<div id="parentDiv" scrollSpy [spiedTags]="['section']" (sectionChange)="onSectionChange($event)" (window:scroll)="onWindowScroll($event)">
 <div class="bg-image" id="home">
   <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="mainNav">
     <div class="container">
-        <img width="40" alt="Soho Logo" src="assets/image/logo-soho.png" />
+        <img class='logo-site' width="40" alt="Soho Logo" src="assets/image/logo-soho.png" />
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" [ngClass]="{'active': currentSection === 'home'}" ><a class="nav-link " (click)="activeTo('home')"  href="#home">Inicio</a></li>
                 <li class="nav-item" [ngClass]="{'active': currentSection === 'us'}" ><a class="nav-link " (click)="activeTo('us')"  href="#us" >Nosotros</a></li>
                 <li class="nav-item" [ngClass]="{'active': currentSection === 'project'}" ><a class="nav-link "  (click)="activeTo('project')" href="#project">Servicios</a></li>
-                <li class="nav-item" [ngClass]="{'active': currentSection === 'success'}" ><a class="nav-link " (click)="activeTo('success')"  href="#success">Casos de éxito</a></li>
+                <li class="nav-item" [ngClass]="{'active': currentSection === 'success'}" ><a class="nav-link " (click)="activeTo('success')"  href="#project">Casos de éxito</a></li>
                 <li class="nav-item" [ngClass]="{'active': currentSection === 'join'}" ><a class="nav-link "  (click)="activeTo('join')" href="#join">Únete al equipo</a></li>
                 <li class="nav-item" [ngClass]="{'active': currentSection === 'contact'}" ><a class="nav-link "  (click)="activeTo('contact')" href="#contact">Contacto</a></li>
             </ul>

@@ -26,7 +26,8 @@ export class AppComponent {
   onWindowScroll(e) {
 
     let element = document.getElementById('mainNav');
-    if (element === null) return;
+    
+    console.log(window.pageYOffset);
 
     if (window.pageYOffset > 50) {
       element.classList.add('mainNavScroll');

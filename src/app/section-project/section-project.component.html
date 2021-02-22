@@ -9,7 +9,7 @@
 </div>
 
 <div class="row" *ngFor="let item of project">
-    <div class="row {{item.color}}-row " [ngClass]="{'reverse': item.id % 2 == 0 }">
+    <div class="row bg-{{item.color}} box" [ngClass]="{'reverse': item.id % 2 == 0 }">
         <div class="col-lg-6">
             <img class="img-fluid" src="assets/image/{{item.image}}.png" alt="" />
         </div>
@@ -20,7 +20,7 @@
                 <div [ngClass]="{'text-white': item.color !== 'white'}">
                     <h2>{{getType(item.type)}}</h2>
                     <p> Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>   
-                    <button class="btn text-{{item.color}}" [ngClass]="{'bg-red' : item.color === 'white'}">VER DETALLES</button> 
+                    <button class="btn btn-project {{getBtn(item.color)}}">VER DETALLES</button> 
                 </div>
             </div>
         </div>
