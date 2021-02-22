@@ -5,6 +5,10 @@
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
 
+.section  
+  display: block 
+  background: rgb(30,37,43)
+
 
 .bg-image
     position: relative
@@ -18,3 +22,82 @@
     background-size: cover
 
 
+.navbar 
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: none
+    background-color: transparent
+    transition: background-color 0.3s ease-in-out
+    .nav-link
+        transition: none
+        padding: 2rem 1.5rem
+        color: #ffffff
+        text-decoration: none
+
+
+.nav-link.active
+    border-bottom: 0.25rem solid #28a745
+
+
+.navbar .navbar-brand 
+    padding: 0.5rem 0
+    color: rgba(255, 255, 255, 0.5)
+
+.mainNavScroll
+    padding-top: 10px
+    padding-bottom: 10px
+    border-bottom: none
+    background-color: #000
+    transition: background-color 0.3s ease-in-out
+    
+.navbar-expand-lg 
+    flex-flow: row nowrap
+    justify-content: flex-start
+
+.navbar-expand-lg .navbar-nav 
+    flex-direction: row
+
+.navbar-expand-lg .navbar-nav .dropdown-menu 
+    position: absolute
+
+.navbar-expand-lg .navbar-nav .nav-link 
+
+    padding-left: 0.5rem
+
+.navbar-expand-lg > .container
+    flex-wrap: nowrap
+
+.navbar-expand-lg > .container
+    flex-wrap: nowrap
+
+.navbar-nav 
+    display: flex
+    flex-direction: column
+    padding-left: 0
+    margin-bottom: 0
+    list-style: none,
+    text-decoration: none
+
+.navbar-expand-lg .navbar-collapse 
+    display: flex !important
+    flex-basis: auto
+
+.fixed-top 
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1030
+    img 
+        margin: 0 16px
+
+.navbar .container
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+
+.navbar-expand-lg .navbar-collapse 
+    display: flex !important
+    flex-basis: auto,
+    

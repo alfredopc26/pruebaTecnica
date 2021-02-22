@@ -19,14 +19,15 @@ export class SectionProjectComponent implements OnInit {
     });
   }
 
-  getOrientation(ref: number){
+  getType(ref){
 
-
-    if(ref % 2 != 0){
-      return 'rigth';
+    if(ref=="site_public_and_priv"){
+      return " Sitio Publico y Privado";
+    }else if(ref=="site_web"){
+      return " Sitio web ";
+    }else if(ref=="app_mobile"){
+      return "TV App";
     }
-
-    return 'left';
 
   }
 

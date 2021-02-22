@@ -1,30 +1,29 @@
-<section class="section-us "  id="us"> 
-    <div class="row text-center text-us">
-        <div class="col-lg-10 mx-auto">
-            <h2 class="text-white" >Proyectos destacados</h2>
+<div class="row center-lg text-us">
+    <div class="col-lg-10">
+        <h2 class="text-white">
+            Proyectos destacados
             <div class="line"><span></span></div>
-            <div class="text-white-50 ">
-                Informacion de proyectos 
+        </h2>
+        <div class="text-white ">Informacion de proyectos</div>
+    </div>
+</div>
+
+<div class="row" *ngFor="let item of project">
+    <div class="row {{item.color}}-row " [ngClass]="{'reverse': item.id % 2 == 0 }">
+        <div class="col-lg-6">
+            <img class="img-fluid" src="assets/image/{{item.image}}.png" alt="" />
+        </div>
+        <div class="col-lg-6 ">
+            <div class="text-project" [ngClass]="{'rev': item.id % 2 == 0 }">
+                <img src="assets/image/{{item.logo}}.png" alt="" />
+                <div class="line-project"><span [ngClass]="{'line-red': item.color === 'white'}"></span></div>
+                <div [ngClass]="{'text-white': item.color !== 'white'}">
+                    <h2>{{getType(item.type)}}</h2>
+                    <p> Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>   
+                    <button class="btn text-{{item.color}}" [ngClass]="{'bg-red' : item.color === 'white'}">VER DETALLES</button> 
+                </div>
             </div>
         </div>
     </div>
-    <div class="row" *ngFor="let item of project">
-        <div class="row {{item.color}}-row">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/image/{{item.image}}.png" alt="" />
-            </div>
-            <div class="col-lg-6 ">
-                <div class="text-project">
-                    <img src="assets/image/{{item.logo}}.png" alt="" />
-                    <div class="line-project"><span></span></div>
-                    <div class="text-white">
-                        <h2>{{item.type}}</h2>
-                        <p> Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>   
-                        <button class="btn bg-white ">VER DETALLES</button> 
-                    </div>
-                  </div>
-                
-            </div>
-        </div>
-    </div>
-</section>
+</div>
+
