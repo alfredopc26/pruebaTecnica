@@ -1,23 +1,74 @@
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
-	
-#banner-wrapper	
-  overflow: hidden
-  padding: 1em 7em
-  background: #000000
-	
-#banner .box-left	
-  float: left
-  display: flex 
-  align-items: center
+		
+@media screen and (min-width: 20em)
+    #banner-wrapper	
+      overflow: hidden
+      padding: 0.1em 1em
+      background: #000000
 
-#banner .box-button	
-  float: left
-  display: flex 
-  padding-left: 20px
-  padding-top: 10px
-	
-#banner .box-right	
-  float: right
-	
+    #banner .box-left	
+      float: left
+      display: block 
+      font-size: 100%
+      text-align: center
+      img 
+          display: none
+
+
+    #banner .box-button	
+      float: left
+      display: flex 
+      padding-left: 30px
+      padding-top: 5px
+      
+    #banner .box-right	
+      float: right
+
+@media screen and (min-width: 40em)
+    #banner-wrapper	
+      overflow: hidden
+      padding: 0.7em 1em
+      background: #000000
+
+    #banner .box-left	
+      float: left
+      display: block 
+      font-size: 70%
+      padding-left: 4em
+      img 
+          display: block
+          padding-left: 25em
+
+
+    #banner .box-button	
+      float: left
+      display: flex 
+      padding-left: 8em
+      padding-top: 5px
+      
+@media screen and (min-width: 60em)
+    #banner-wrapper	
+      overflow: hidden
+      padding: 1em 5em
+      background: #000000
+
+    #banner .box-left	
+      float: left
+      display: flex 
+      align-items: center
+      font-size: 100%
+      padding-left: 0em
+      img 
+        display: block
+        padding-left: 0em
+
+    #banner .box-button	
+      float: left
+      display: flex 
+      padding-left: 10px
+      padding-top: 5px
+      
+    #banner .box-right	
+      float: right

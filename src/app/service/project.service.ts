@@ -7,7 +7,7 @@ import { Observable } from "rxjs/Observable";
 })
 export class ProjectService {
 
-  url="http://172.16.4.3:444/api.service.php/getdata";
+  url="http://localhost:444/api.service.php/getdata";
 
   constructor(private http: HttpClient) { }
 
