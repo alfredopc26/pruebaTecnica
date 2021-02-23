@@ -1,9 +1,13 @@
 <?php 
-
+/**
+ * Class conexonBD
+ */
 class conexionBD 
 {
-
-    var $conn;
+    /**
+     * @var
+     */
+    private $conn;
 
     public function __construct()
     {
@@ -11,6 +15,10 @@ class conexionBD
 
     }
 
+    /**
+     * 
+     * @return array $r
+     */
     public function getDataAll(){
 
         try {
@@ -34,8 +42,5 @@ class conexionBD
 
 }
 
-// $cone = new conexionBD();
-
-// var_dump($cone->test_conection());
 
 ?>
