@@ -12,7 +12,6 @@ import { FooterComponent } from './footer/footer.component'
 
 import { ProjectService } from './service/project.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ScrollSpyDirective } from './scroll-spy.directive';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
     SectionUsComponent,
     SectionProjectComponent,
     SectionContactComponent,
-    FooterComponent,
-    ScrollSpyDirective
+    FooterComponent
   ],
   imports: [
     BrowserModule,
